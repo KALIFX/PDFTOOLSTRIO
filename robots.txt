@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kalifx.github.io/PDFTOOLSTRIO/sitemap.xml
