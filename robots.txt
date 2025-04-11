@@ -1,5 +1,5 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://kalifx.github.io/PDFTOOLSTRIO/sitemap1.xml
+Sitemap: https://kalifx.github.io/PDFTOOLSTRIO/sitemap_index.xml
 
