@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Successful</title>
+  <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+  <link rel="icon" href="../../../../ASSETS/IMAGES/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ 
+</head>
+<body>
+<!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../../../../index.html">
+      <img src="../../../../ASSETS/IMAGES/pdf_tools.png" alt="Logo">
+	  </a>
+    </div>
+    <ul class="nav-links">
+		<li class="contact-dropdown">
+			<a href="#"><i class="fas fa-envelope"></i> Contacts</a>
+			<div class="contact-menu">
+				<a href="https://wa.me/+27715780602" target="_blank">
+					<i class="fab fa-whatsapp"></i> WhatsApp
+				</a>
+				<a href="https://t.me/KARLIIIIII" target="_blank">
+					<i class="fab fa-telegram-plane"></i> Telegram
+				</a>
+			</div>
+		</li>
+    </ul>
+  </nav>
+  <main class="thank-you-container">
+  <div class="thank-you-box">
+    <img src="ASSETS/IMAGES/checkmark.png" alt="Success Icon">
+    <h1>Thank You!</h1>
+	<p>Your payment was successful. We truly appreciate your support — it means a lot!</p>
+	<p><strong>Click the button below to proceed to your download:</strong></p>
+
+	<a href="https://drive.google.com/file/d/1xqlGZnaISyrpV_K7RMu-LoSkfq8DE7TQ/view?usp=drive_link" target="_blank" class="download-button">📥 Download Now</a>
+
+	<p id="countdown-text" style="margin-top: 15px; font-size: 0.9rem; color: #777;">
+	  Your download will start in <span id="count">10</span> seconds...
+	</p>
+  </div>
+</main>
+
+ <!-- Footer -->
+  <footer>
+    <p>© 2025 KALI PDF TOOLS. All rights reserved.</p>
+  </footer>
+  <script>
+  const countdownEl = document.getElementById('count');
+  const downloadUrl = "https://drive.google.com/file/d/1xqlGZnaISyrpV_K7RMu-LoSkfq8DE7TQ/view?usp=drive_link"; // <-- Replace with your actual file ID
+
+  let counter = 10;
+  const countdown = setInterval(() => {
+    counter--;
+    countdownEl.textContent = counter;
+    if (counter === 0) {
+      clearInterval(countdown);
+      window.open(downloadUrl, "_blank");
+    }
+  }, 1000);
+</script>
+</body>
+</html>
